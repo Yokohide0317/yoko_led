@@ -1,0 +1,10 @@
+[Unit]
+Description = LED tape
+
+[Service]
+ExecStart = /home/pi/yoko_led/start_led.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
